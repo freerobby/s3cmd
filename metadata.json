@@ -1,0 +1,29 @@
+{
+  "recipes": {
+  },
+  "suggestions": {
+  },
+  "license": "Apache 2.0",
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "conflicting": {
+  },
+  "dependencies": {
+  },
+  "providing": {
+  },
+  "description": "Installs and configures s3cmd",
+  "platforms": {
+  },
+  "maintainer": "Enis Soztutar",
+  "version": "0.0.1",
+  "replacing": {
+  },
+  "maintainer_email": "enis@speeddate.com",
+  "groupings": {
+  },
+  "name": "s3cmd",
+  "recommendations": {
+  },
+  "attributes": {
+  }
+}
