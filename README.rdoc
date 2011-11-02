@@ -9,6 +9,8 @@ Installs and configures s3cmd
 All node attributes are set under the :s3cmd namespace.
 
 * :users - array of usernames for whom a .s3cfg will be created in their home directory; defaults to [:root]
+* :aws_access_key_id - AWS access key for S3
+* :aws_secret_access_key - AWS secret access key for S3
 
 = USAGE:
 
