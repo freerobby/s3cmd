@@ -1,8 +1,15 @@
 = DESCRIPTION:
 
+Installs and configures s3cmd
+
 = REQUIREMENTS:
 
 = ATTRIBUTES:
 
+All node attributes are set under the :s3cmd namespace.
+
+* :users - array of usernames for whom a .s3cfg will be created in their home directory; defaults to [:root]
+
 = USAGE:
 
+Just add the s3cmd recipe to the applicable nodes

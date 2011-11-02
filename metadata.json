@@ -1,29 +1,31 @@
 {
-  "recipes": {
-  },
-  "suggestions": {
-  },
+  "name": "s3cmd",
+  "description": "Installs and configures s3cmd",
+  "long_description": "= DESCRIPTION:\n\nInstalls and configures s3cmd\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\nAll node attributes are set under the :s3cmd namespace.\n\n* :users - array of usernames for whom a .s3cfg will be created in their home directory; defaults to [:root]\n\n= USAGE:\n\nJust add the s3cmd recipe to the applicable nodes",
+  "maintainer": "Enis Soztutar",
+  "maintainer_email": "enis@speeddate.com",
   "license": "Apache 2.0",
-  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
-  "conflicting": {
+  "platforms": {
+    "ubuntu": ">= 0.0.0"
   },
   "dependencies": {
   },
-  "providing": {
-  },
-  "description": "Installs and configures s3cmd",
-  "platforms": {
-  },
-  "maintainer": "Enis Soztutar",
-  "version": "0.0.1",
-  "replacing": {
-  },
-  "maintainer_email": "enis@speeddate.com",
-  "groupings": {
-  },
-  "name": "s3cmd",
   "recommendations": {
   },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
   "attributes": {
-  }
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "s3cmd": "Installs and configures s3cmd"
+  },
+  "version": "0.0.1"
 }
