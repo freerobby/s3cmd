@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 
-package "git"
+package "git-core"
 package "python-setuptools"
 
 git "#{node[:s3cmd][:install_prefix_root]}/share/s3cmd" do
