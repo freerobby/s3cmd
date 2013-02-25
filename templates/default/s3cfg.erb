@@ -1,7 +1,7 @@
 [default]
 access_key = <%= node[:s3cmd][:aws_access_key_id] %>
 acl_public = False
-bucket_location = US
+bucket_location = <%= node[:s3cmd][:bucket_location] %>
 cloudfront_host = cloudfront.amazonaws.com
 cloudfront_resource = /2008-06-30/distribution
 default_mime_type = binary/octet-stream
