@@ -11,7 +11,7 @@ directory "#{node[:s3cmd][:install_prefix_root]}/share/s3cmd" do
 end
 
 git "#{node[:s3cmd][:install_prefix_root]}/share/s3cmd" do
-  repository "git://github.com/s3tools/s3cmd.git"
+  repository "#{node[:s3cmd][:repository]}"
   reference node[:s3cmd][:version]
   action :sync
 end
