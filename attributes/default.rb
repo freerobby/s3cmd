@@ -5,6 +5,6 @@ default[:s3cmd][:users] = [:root]
 default[:s3cmd][:aws_access_key_id] = ""
 default[:s3cmd][:aws_secret_access_key] = ""
 
-default[:s3cmd][:version] = "v1.1.0"
+default[:s3cmd][:version] = "v1.0.1"
 default[:s3cmd][:user] = "root"
 default[:s3cmd][:install_prefix_root] = "/usr/local"
