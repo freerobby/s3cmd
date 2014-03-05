@@ -1,5 +1,5 @@
 [default]
-access_key = <%= node[:s3cmd][:aws_access_key_id] %>
+access_key = <%= @aws_access_key_id %>
 acl_public = False
 bucket_location = US
 cloudfront_host = cloudfront.amazonaws.com
@@ -26,7 +26,7 @@ proxy_host =
 proxy_port = 0
 recursive = False
 recv_chunk = 4096
-secret_key = <%= node[:s3cmd][:aws_secret_access_key] %>
+secret_key = <%= @aws_secret_access_key %>
 send_chunk = 4096
 simpledb_host = sdb.amazonaws.com
 skip_existing = False

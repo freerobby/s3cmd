@@ -33,12 +33,19 @@ end
 #you access key and secret. 
 node[:s3cmd][:users].each do |user|   
   home = user.to_s == :root.to_s ? "/root" : "/home/#{user}"
-  
+
+  aws_data_bag_item = Chef::EncryptedDataBagItem.load(node[:s3cmd][:encrypted_data_bag], node[:s3cmd][:encrypted_data_bag_item])
+  AWS_ACCESS_KEY_ID = aws_data_bag_item['aws_access_key_id']
+  AWS_SECRET_ACCESS_KEY = aws_data_bag_item['aws_secret_access_key']
   template "s3cfg" do
     path "#{home}/.s3cfg"
     source "s3cfg.erb"
     owner "#{user}"
     group "#{user}"
     mode 0600
+    variables(
+      aws_access_key_id: AWS_ACCESS_KEY_ID,
+      aws_secret_access_key: AWS_SECRET_ACCESS_KEY
+    )
   end
 end
