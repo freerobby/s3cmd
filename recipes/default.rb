@@ -3,8 +3,25 @@
 # Recipe:: default
 #
 
-package "git-core"
-package "python-setuptools"
+
+case node[:platform]
+    when "centos", "redhat"
+
+       %w{git}.each do |pkg|
+          package pkg do
+           action :install
+         end
+       end
+
+    when "ubuntu", "debian"
+   
+       %w{git-core python-setuptools}.each do |pkg|
+         package pkg do
+          action :install
+         end
+       end
+end
+
 
 directory "#{node[:s3cmd][:install_prefix_root]}/share/s3cmd" do
   action :create

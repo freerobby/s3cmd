@@ -8,3 +8,5 @@ version          "0.0.1"
 recipe "s3cmd", "Installs and configures s3cmd"
 
 supports "ubuntu"
+supports "centos"
+supports "redhat"
