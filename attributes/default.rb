@@ -1,5 +1,5 @@
 # list of users that will have the s3cmd configuration 
-default[:s3cmd][:users] = [:root]
+default[:s3cmd][:users] = ['root']
 
 # S3 credentials
 default[:s3cmd][:encrypted_data_bag] = "aws_credentials"
