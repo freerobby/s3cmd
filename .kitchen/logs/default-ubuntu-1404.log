@@ -1,0 +1,627 @@
+I, [2014-12-02T16:05:06.210996 #83017]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-12-02T16:05:06.211139 #83017]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:05:06.211916 #83017]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2014-12-02T16:05:06.212370 #83017]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-12-02T16:05:06.212460 #83017]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-12-02T16:05:07.557860 #83017]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-12-02T16:05:07.860582 #83017]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'canonical-ubuntu-14.04'...
+[KProgress: 90%[KI, [2014-12-02T16:05:18.323572 #83017]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-12-02T16:05:18.910731 #83017]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1417554318862_42087
+I, [2014-12-02T16:05:19.011788 #83017]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set forwarded ports...
+I, [2014-12-02T16:05:20.900308 #83017]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2204.
+I, [2014-12-02T16:05:20.950974 #83017]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-12-02T16:05:20.997316 #83017]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-12-02T16:05:20.997660 #83017]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-12-02T16:05:21.062029 #83017]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-12-02T16:05:21.131602 #83017]  INFO -- default-ubuntu-1404:     default: 22 => 2204 (adapter 1)
+I, [2014-12-02T16:05:23.372514 #83017]  INFO -- default-ubuntu-1404: ==> default: Running 'pre-boot' VM customizations...
+I, [2014-12-02T16:05:23.401765 #83017]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-12-02T16:05:23.650660 #83017]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-12-02T16:05:23.928109 #83017]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2204
+I, [2014-12-02T16:05:23.928302 #83017]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-12-02T16:05:23.928355 #83017]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-12-02T16:05:39.101911 #83017]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-12-02T16:05:39.237163 #83017]  INFO -- default-ubuntu-1404:     default: Warning: Remote connection disconnect. Retrying...
+I, [2014-12-02T16:05:41.721725 #83017]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-12-02T16:05:41.722008 #83017]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-12-02T16:05:41.750982 #83017]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-12-02T16:05:43.311610 #83017]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-12-02T16:05:45.039273 #83017]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-12-02T16:05:45.042788 #83017]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m38.83s).
+I, [2014-12-02T16:05:45.043429 #83017]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-12-02T16:05:45.046481 #83017]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-12-02T16:05:45.048089 #83017]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+E, [2014-12-02T16:05:45.050462 #83017] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2014-12-02T16:05:45.050885 #83017] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2014-12-02T16:05:45.050932 #83017] ERROR -- default-ubuntu-1404: Class: Kitchen::UserError
+E, [2014-12-02T16:05:45.050970 #83017] ERROR -- default-ubuntu-1404: Message: The metadata.rb does not define the 'name' key. Please add: `name '<cookbook_name>'` to metadata.rb and retry
+E, [2014-12-02T16:05:45.051004 #83017] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2014-12-02T16:05:45.051035 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:369:in `cp_this_cookbook'
+E, [2014-12-02T16:05:45.051143 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:265:in `prepare_cookbooks'
+E, [2014-12-02T16:05:45.051183 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:120:in `create_sandbox'
+E, [2014-12-02T16:05:45.051211 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2014-12-02T16:05:45.051264 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2014-12-02T16:05:45.051298 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-12-02T16:05:45.051337 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-12-02T16:05:45.051370 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-12-02T16:05:45.051407 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-12-02T16:05:45.051455 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-12-02T16:05:45.051485 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-12-02T16:05:45.051516 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:05:45.051550 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-12-02T16:05:45.051590 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-12-02T16:05:45.051622 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-12-02T16:05:45.051669 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-12-02T16:05:45.051716 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-12-02T16:05:45.051739 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-12-02T16:05:45.051765 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-12-02T16:05:45.051820 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-12-02T16:05:45.051851 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:05:45.051954 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-12-02T16:05:45.051993 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-12-02T16:05:45.052031 #83017] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-12-02T16:05:45.052054 #83017] ERROR -- default-ubuntu-1404: ----------------------
+I, [2014-12-02T16:06:56.066259 #83227]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-12-02T16:06:56.067521 #83227]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:06:58.055705 #83227]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2014-12-02T16:06:59.199659 #83227]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2014-12-02T16:06:59.403443 #83227]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-12-02T16:06:59.405106 #83227]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m3.34s).
+I, [2014-12-02T16:06:59.405429 #83227]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-12-02T16:06:59.405558 #83227]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-12-02T16:07:00.371357 #83227]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-12-02T16:07:00.657325 #83227]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'canonical-ubuntu-14.04'...
+[KProgress: 20%[KProgress: 90%[KI, [2014-12-02T16:07:09.922340 #83227]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-12-02T16:07:10.556211 #83227]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1417554430477_73032
+I, [2014-12-02T16:07:10.640048 #83227]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set forwarded ports...
+I, [2014-12-02T16:07:12.322564 #83227]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2204.
+I, [2014-12-02T16:07:12.362416 #83227]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-12-02T16:07:12.394977 #83227]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-12-02T16:07:12.395190 #83227]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-12-02T16:07:12.428782 #83227]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-12-02T16:07:12.484861 #83227]  INFO -- default-ubuntu-1404:     default: 22 => 2204 (adapter 1)
+I, [2014-12-02T16:07:14.710048 #83227]  INFO -- default-ubuntu-1404: ==> default: Running 'pre-boot' VM customizations...
+I, [2014-12-02T16:07:14.742844 #83227]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-12-02T16:07:14.990756 #83227]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-12-02T16:07:15.254110 #83227]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2204
+I, [2014-12-02T16:07:15.254264 #83227]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-12-02T16:07:15.254528 #83227]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-12-02T16:07:30.404304 #83227]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-12-02T16:07:30.535354 #83227]  INFO -- default-ubuntu-1404:     default: Warning: Remote connection disconnect. Retrying...
+I, [2014-12-02T16:07:33.068813 #83227]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-12-02T16:07:33.069121 #83227]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-12-02T16:07:33.106076 #83227]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-12-02T16:07:34.806870 #83227]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-12-02T16:07:36.333826 #83227]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-12-02T16:07:36.335615 #83227]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m36.93s).
+I, [2014-12-02T16:07:36.336167 #83227]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-12-02T16:07:36.337249 #83227]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-12-02T16:07:36.337971 #83227]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2014-12-02T16:07:36.346277 #83227]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-12-02T16:07:36.348195 #83227]  INFO -- default-ubuntu-1404: Preparing data bags
+I, [2014-12-02T16:07:36.348507 #83227]  INFO -- default-ubuntu-1404: Preparing encrypted data bag secret
+E, [2014-12-02T16:07:36.350812 #83227] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2014-12-02T16:07:36.350948 #83227] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2014-12-02T16:07:36.350979 #83227] ERROR -- default-ubuntu-1404: Class: Errno::ENOENT
+E, [2014-12-02T16:07:36.351003 #83227] ERROR -- default-ubuntu-1404: Message: No such file or directory @ rb_file_s_stat - /Users/robby/workspace/wistia/chef/chef-s3cmd/test/support/encrypted_data_bag_secret_key
+E, [2014-12-02T16:07:36.351023 #83227] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2014-12-02T16:07:36.351041 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:1573:in `stat'
+E, [2014-12-02T16:07:36.351060 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:1573:in `block in fu_each_src_dest'
+E, [2014-12-02T16:07:36.351078 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:1589:in `fu_each_src_dest0'
+E, [2014-12-02T16:07:36.351096 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:1571:in `fu_each_src_dest'
+E, [2014-12-02T16:07:36.351114 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:440:in `cp_r'
+E, [2014-12-02T16:07:36.351133 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:250:in `prepare_secret'
+E, [2014-12-02T16:07:36.351220 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:127:in `create_sandbox'
+E, [2014-12-02T16:07:36.351242 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2014-12-02T16:07:36.351261 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2014-12-02T16:07:36.351280 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-12-02T16:07:36.351298 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-12-02T16:07:36.351327 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-12-02T16:07:36.351348 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-12-02T16:07:36.351367 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-12-02T16:07:36.351385 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-12-02T16:07:36.351403 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:07:36.351425 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-12-02T16:07:36.351444 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-12-02T16:07:36.351463 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-12-02T16:07:36.351481 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-12-02T16:07:36.351563 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-12-02T16:07:36.351583 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-12-02T16:07:36.351602 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-12-02T16:07:36.351620 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-12-02T16:07:36.351638 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:07:36.351660 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-12-02T16:07:36.351679 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-12-02T16:07:36.351697 #83227] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-12-02T16:07:36.351715 #83227] ERROR -- default-ubuntu-1404: ----------------------
+I, [2014-12-02T16:08:45.535627 #83468]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-12-02T16:08:45.536750 #83468]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:08:47.624194 #83468]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2014-12-02T16:08:48.694918 #83468]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2014-12-02T16:08:48.898308 #83468]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-12-02T16:08:48.899964 #83468]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m3.36s).
+I, [2014-12-02T16:08:48.900184 #83468]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-12-02T16:08:48.900283 #83468]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-12-02T16:08:49.866211 #83468]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-12-02T16:08:50.140202 #83468]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'canonical-ubuntu-14.04'...
+[KProgress: 20%[KProgress: 90%[KI, [2014-12-02T16:08:59.058551 #83468]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-12-02T16:08:59.612579 #83468]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1417554539564_94792
+I, [2014-12-02T16:08:59.698848 #83468]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set forwarded ports...
+I, [2014-12-02T16:09:01.370287 #83468]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2204.
+I, [2014-12-02T16:09:01.413709 #83468]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-12-02T16:09:01.445662 #83468]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-12-02T16:09:01.445901 #83468]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-12-02T16:09:01.477860 #83468]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-12-02T16:09:01.529366 #83468]  INFO -- default-ubuntu-1404:     default: 22 => 2204 (adapter 1)
+I, [2014-12-02T16:09:03.749707 #83468]  INFO -- default-ubuntu-1404: ==> default: Running 'pre-boot' VM customizations...
+I, [2014-12-02T16:09:03.778871 #83468]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-12-02T16:09:04.016771 #83468]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-12-02T16:09:04.268823 #83468]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2204
+I, [2014-12-02T16:09:04.268956 #83468]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-12-02T16:09:04.269057 #83468]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-12-02T16:09:19.422650 #83468]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-12-02T16:09:19.547334 #83468]  INFO -- default-ubuntu-1404:     default: Warning: Remote connection disconnect. Retrying...
+I, [2014-12-02T16:09:23.093423 #83468]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-12-02T16:09:23.093736 #83468]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-12-02T16:09:23.121008 #83468]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-12-02T16:09:24.738197 #83468]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-12-02T16:09:26.134141 #83468]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-12-02T16:09:26.135711 #83468]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m37.23s).
+I, [2014-12-02T16:09:26.136167 #83468]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-12-02T16:09:26.137895 #83468]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-12-02T16:09:26.139249 #83468]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2014-12-02T16:09:26.151296 #83468]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-12-02T16:09:26.153134 #83468]  INFO -- default-ubuntu-1404: Preparing data bags
+I, [2014-12-02T16:09:26.153409 #83468]  INFO -- default-ubuntu-1404: Preparing encrypted data bag secret
+I, [2014-12-02T16:09:28.128948 #83468]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (true)
+I, [2014-12-02T16:09:28.129039 #83468]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/install.sh
+I, [2014-12-02T16:09:28.129065 #83468]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2014-12-02T16:09:28.129094 #83468]  INFO -- default-ubuntu-1404: trying wget...
+Downloading Chef  for ubuntu...I, [2014-12-02T16:09:33.920205 #83468]  INFO -- default-ubuntu-1404: 
+downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64I, [2014-12-02T16:09:33.920533 #83468]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1933/metadata.txtI, [2014-12-02T16:09:33.920799 #83468]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-12-02T16:09:33.921070 #83468]  INFO -- default-ubuntu-1404: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.debI, [2014-12-02T16:09:39.135028 #83468]  INFO -- default-ubuntu-1404: 
+md5	a9965ce5811ddd75af1b587e40cca934I, [2014-12-02T16:09:39.135836 #83468]  INFO -- default-ubuntu-1404: 
+sha256	0b98b310afc2c0b066648e550e7b59a5e39faf60dc4fd9b4792035d0553c27c3I, [2014-12-02T16:09:39.136591 #83468]  INFO -- default-ubuntu-1404: 
+downloaded metadata file looks valid...I, [2014-12-02T16:09:39.138062 #83468]  INFO -- default-ubuntu-1404: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.debI, [2014-12-02T16:09:39.145150 #83468]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1933/chef_11.16.4-1_amd64.debI, [2014-12-02T16:09:39.145609 #83468]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-12-02T16:09:39.146234 #83468]  INFO -- default-ubuntu-1404: 
+Comparing checksum with sha256sum...I, [2014-12-02T16:09:53.611885 #83468]  INFO -- default-ubuntu-1404: 
+Installing Chef I, [2014-12-02T16:09:53.790708 #83468]  INFO -- default-ubuntu-1404: 
+installing with dpkg...I, [2014-12-02T16:09:53.790965 #83468]  INFO -- default-ubuntu-1404: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60899 files and directories currently installed.)I, [2014-12-02T16:09:54.187095 #83468]  INFO -- default-ubuntu-1404: 
+Preparing to unpack .../chef_11.16.4-1_amd64.deb ...I, [2014-12-02T16:09:54.187455 #83468]  INFO -- default-ubuntu-1404: 
+ * Stopping chef-client chef-client       [80G [74G[ OK ]I, [2014-12-02T16:09:54.222905 #83468]  INFO -- default-ubuntu-1404: 
+Unpacking chef (11.16.4-1) over (11.8.2-2) ...I, [2014-12-02T16:09:54.229410 #83468]  INFO -- default-ubuntu-1404: 
+dpkg: warning: unable to delete old directory '/var/log/chef': Directory not emptyI, [2014-12-02T16:09:57.742115 #83468]  INFO -- default-ubuntu-1404: 
+dpkg: warning: unable to delete old directory '/etc/chef': Directory not emptyI, [2014-12-02T16:09:57.743536 #83468]  INFO -- default-ubuntu-1404: 
+Setting up chef (11.16.4-1) ...I, [2014-12-02T16:09:57.771779 #83468]  INFO -- default-ubuntu-1404: 
+Thank you for installing Chef!I, [2014-12-02T16:09:57.849607 #83468]  INFO -- default-ubuntu-1404: 
+Processing triggers for man-db (2.6.7.1-1) ...I, [2014-12-02T16:09:57.855615 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:09:58.489913 #83468]  INFO -- default-ubuntu-1404: Transfering files to <default-ubuntu-1404>
+[2014-12-02T21:09:59+00:00] INFO: Forking chef instance to converge...I, [2014-12-02T16:09:59.614112 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:09:59+00:00] WARN: I, [2014-12-02T16:09:59.617707 #83468]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-12-02T16:09:59.618011 #83468]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-12-02T16:09:59.618257 #83468]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-12-02T16:09:59.618484 #83468]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-12-02T16:09:59.618680 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:09:59.618790 #83468]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-12-02T16:09:59.619038 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:09:59.619146 #83468]  INFO -- default-ubuntu-1404: 
+```I, [2014-12-02T16:09:59.619488 #83468]  INFO -- default-ubuntu-1404: 
+  # Verify all HTTPS connections (recommended)I, [2014-12-02T16:09:59.619875 #83468]  INFO -- default-ubuntu-1404: 
+  ssl_verify_mode :verify_peerI, [2014-12-02T16:09:59.620227 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:09:59.620428 #83468]  INFO -- default-ubuntu-1404: 
+  # OR, Verify only connections to chef-serverI, [2014-12-02T16:09:59.620669 #83468]  INFO -- default-ubuntu-1404: 
+  verify_api_cert trueI, [2014-12-02T16:09:59.621339 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:09:59.621370 #83468]  INFO -- default-ubuntu-1404: ```
+I, [2014-12-02T16:09:59.621392 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:09:59.621413 #83468]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-12-02T16:09:59.621434 #83468]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-12-02T16:09:59.621453 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:09:59.621472 #83468]  INFO -- default-ubuntu-1404: ```
+I, [2014-12-02T16:09:59.621491 #83468]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-12-02T16:09:59.621511 #83468]  INFO -- default-ubuntu-1404: ```
+I, [2014-12-02T16:09:59.621529 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:09:59.621548 #83468]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-12-02T16:09:59.621588 #83468]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.16.4[0mI, [2014-12-02T16:09:59.668366 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:09:59+00:00] INFO: *** Chef 11.16.4 ***I, [2014-12-02T16:09:59.668805 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:09:59+00:00] INFO: Chef-client pid: 2476I, [2014-12-02T16:09:59.669241 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:10:05+00:00] INFO: Setting the run_list to ["recipe[s3cmd::default]"] from CLI optionsI, [2014-12-02T16:10:05.459011 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:10:05+00:00] INFO: Run List is [recipe[s3cmd::default]]I, [2014-12-02T16:10:05.462464 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:10:05+00:00] INFO: Run List expands to [s3cmd::default]I, [2014-12-02T16:10:05.462711 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:10:05+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-12-02T16:10:05.463078 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:10:05+00:00] INFO: Running start handlersI, [2014-12-02T16:10:05.463547 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:10:05+00:00] INFO: Start handlers complete.I, [2014-12-02T16:10:05.463810 #83468]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-12-02T16:10:05.465630 #83468]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-12-02T16:10:05.469601 #83468]  INFO -- default-ubuntu-1404: 
+================================================================================[0mI, [2014-12-02T16:10:05.470018 #83468]  INFO -- default-ubuntu-1404: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/s3cmd/recipes/default.rb[0mI, [2014-12-02T16:10:05.470212 #83468]  INFO -- default-ubuntu-1404: 
+================================================================================[0mI, [2014-12-02T16:10:05.470624 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:10:05.470755 #83468]  INFO -- default-ubuntu-1404: 
+[0mChef::Exceptions::ValidationFailed[0mI, [2014-12-02T16:10:05.471154 #83468]  INFO -- default-ubuntu-1404: 
+----------------------------------[0mI, [2014-12-02T16:10:05.471464 #83468]  INFO -- default-ubuntu-1404: 
+Data Bag Items must contain a Hash or Mash![0mI, [2014-12-02T16:10:05.471763 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:10:05.471931 #83468]  INFO -- default-ubuntu-1404: 
+[0mCookbook Trace:[0mI, [2014-12-02T16:10:05.472367 #83468]  INFO -- default-ubuntu-1404: 
+---------------[0mI, [2014-12-02T16:10:05.472796 #83468]  INFO -- default-ubuntu-1404: 
+  /tmp/kitchen/cookbooks/s3cmd/recipes/default.rb:37:in `block in from_file'I, [2014-12-02T16:10:05.473047 #83468]  INFO -- default-ubuntu-1404: 
+[0m  /tmp/kitchen/cookbooks/s3cmd/recipes/default.rb:34:in `each'I, [2014-12-02T16:10:05.473530 #83468]  INFO -- default-ubuntu-1404: 
+[0m  /tmp/kitchen/cookbooks/s3cmd/recipes/default.rb:34:in `from_file'[0mI, [2014-12-02T16:10:05.473849 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:10:05.474008 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:10:05.474375 #83468]  INFO -- default-ubuntu-1404: [0mRelevant File Content:[0m
+I, [2014-12-02T16:10:05.474406 #83468]  INFO -- default-ubuntu-1404: ----------------------[0m
+I, [2014-12-02T16:10:05.474638 #83468]  INFO -- default-ubuntu-1404: /tmp/kitchen/cookbooks/s3cmd/recipes/default.rb:
+I, [2014-12-02T16:10:05.474667 #83468]  INFO -- default-ubuntu-1404: [0m
+I, [2014-12-02T16:10:05.474689 #83468]  INFO -- default-ubuntu-1404: [0m 30:  end
+I, [2014-12-02T16:10:05.474723 #83468]  INFO -- default-ubuntu-1404: [0m 31:  
+I, [2014-12-02T16:10:05.474744 #83468]  INFO -- default-ubuntu-1404: [0m 32:  #deploy configuration for each user. Change s3cfg.erb template in your site cookbook to set 
+I, [2014-12-02T16:10:05.474804 #83468]  INFO -- default-ubuntu-1404: [0m 33:  #you access key and secret. 
+I, [2014-12-02T16:10:05.474828 #83468]  INFO -- default-ubuntu-1404: [0m 34:  node[:s3cmd][:users].each do |user|   
+I, [2014-12-02T16:10:05.475039 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:10:05.475065 #83468]  INFO -- default-ubuntu-1404: [0m 35:    home = user.to_s == :root.to_s ? '/root' : "/home/#{user}"
+I, [2014-12-02T16:10:05.475087 #83468]  INFO -- default-ubuntu-1404: [0m 36:  
+I, [2014-12-02T16:10:05.475107 #83468]  INFO -- default-ubuntu-1404: [0m 37>>   aws_data_bag_item = Chef::EncryptedDataBagItem.load(node[:s3cmd][:encrypted_data_bag], node[:s3cmd][:encrypted_data_bag_item])
+I, [2014-12-02T16:10:05.475127 #83468]  INFO -- default-ubuntu-1404: [0m 38:    AWS_ACCESS_KEY_ID = aws_data_bag_item['aws_access_key_id']
+I, [2014-12-02T16:10:05.475147 #83468]  INFO -- default-ubuntu-1404: [0m 39:    AWS_SECRET_ACCESS_KEY = aws_data_bag_item['aws_secret_access_key']
+I, [2014-12-02T16:10:05.475178 #83468]  INFO -- default-ubuntu-1404: [0m 40:    template 's3cfg' do
+I, [2014-12-02T16:10:05.475200 #83468]  INFO -- default-ubuntu-1404: [0m 41:      path "#{home}/.s3cfg"
+I, [2014-12-02T16:10:05.475418 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:10:05.475453 #83468]  INFO -- default-ubuntu-1404: [0m 42:      source 's3cfg.erb'
+I, [2014-12-02T16:10:05.475475 #83468]  INFO -- default-ubuntu-1404: [0m 43:      owner user
+I, [2014-12-02T16:10:05.475494 #83468]  INFO -- default-ubuntu-1404: [0m 44:      group user
+I, [2014-12-02T16:10:05.475514 #83468]  INFO -- default-ubuntu-1404: [0m 45:      mode 0600
+I, [2014-12-02T16:10:05.475569 #83468]  INFO -- default-ubuntu-1404: [0m 46:      variables(
+I, [2014-12-02T16:10:05.475600 #83468]  INFO -- default-ubuntu-1404: [0m
+I, [2014-12-02T16:10:05.475623 #83468]  INFO -- default-ubuntu-1404: [0m[0m
+I, [2014-12-02T16:10:05.475857 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:10:05.475883 #83468]  INFO -- default-ubuntu-1404: Running handlers:[0m
+[2014-12-02T21:10:05+00:00] ERROR: Running exception handlersI, [2014-12-02T16:10:05.476147 #83468]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:10:05.476443 #83468]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2014-12-02T16:10:05.476475 #83468]  INFO -- default-ubuntu-1404: [0m[2014-12-02T21:10:05+00:00] ERROR: Exception handlers complete
+I, [2014-12-02T16:10:05.476498 #83468]  INFO -- default-ubuntu-1404: [2014-12-02T21:10:05+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2014-12-02T16:10:05.476639 #83468]  INFO -- default-ubuntu-1404: 
+Chef Client failed. 0 resources updated in 5.863763673 seconds[0mI, [2014-12-02T16:10:05.477002 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:10:05+00:00] ERROR: Data Bag Items must contain a Hash or Mash!I, [2014-12-02T16:10:05.492126 #83468]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:10:05+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-12-02T16:10:05.527022 #83468]  INFO -- default-ubuntu-1404: 
+E, [2014-12-02T16:10:05.556239 #83468] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2014-12-02T16:10:05.556633 #83468] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2014-12-02T16:10:05.556681 #83468] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2014-12-02T16:10:05.556705 #83468] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-12-02T16:10:05.556756 #83468] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2014-12-02T16:10:05.556794 #83468] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2014-12-02T16:10:05.556867 #83468] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-12-02T16:10:05.556895 #83468] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2014-12-02T16:10:05.556942 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:112:in `rescue in run_remote'
+E, [2014-12-02T16:10:05.557038 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2014-12-02T16:10:05.557155 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
+E, [2014-12-02T16:10:05.557223 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-12-02T16:10:05.557274 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `new'
+E, [2014-12-02T16:10:05.557303 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `converge'
+E, [2014-12-02T16:10:05.557344 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-12-02T16:10:05.557410 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-12-02T16:10:05.557437 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-12-02T16:10:05.557477 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-12-02T16:10:05.557505 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-12-02T16:10:05.557578 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-12-02T16:10:05.557603 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:10:05.557621 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-12-02T16:10:05.557639 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-12-02T16:10:05.557664 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-12-02T16:10:05.557682 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-12-02T16:10:05.557700 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-12-02T16:10:05.557717 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-12-02T16:10:05.557734 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-12-02T16:10:05.557760 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-12-02T16:10:05.557778 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:10:05.557795 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-12-02T16:10:05.557813 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-12-02T16:10:05.557830 #83468] ERROR -- default-ubuntu-1404: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-12-02T16:10:05.557847 #83468] ERROR -- default-ubuntu-1404: ----------------------
+I, [2014-12-02T16:12:17.473319 #83848]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-12-02T16:12:17.474410 #83848]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:12:19.522023 #83848]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2014-12-02T16:12:20.688684 #83848]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2014-12-02T16:12:21.018197 #83848]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-12-02T16:12:21.020619 #83848]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m3.54s).
+I, [2014-12-02T16:12:21.020948 #83848]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2014-12-02T16:12:21.021060 #83848]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-12-02T16:12:21.985734 #83848]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-12-02T16:12:22.274671 #83848]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'canonical-ubuntu-14.04'...
+[KProgress: 90%[KI, [2014-12-02T16:12:31.561884 #83848]  INFO -- default-ubuntu-1404: ==> default: Matching MAC address for NAT networking...
+I, [2014-12-02T16:12:32.108028 #83848]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: default-ubuntu-1404_default_1417554752059_15786
+I, [2014-12-02T16:12:32.191403 #83848]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set forwarded ports...
+I, [2014-12-02T16:12:33.839860 #83848]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2204.
+I, [2014-12-02T16:12:33.880373 #83848]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2014-12-02T16:12:33.912089 #83848]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2014-12-02T16:12:33.912541 #83848]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2014-12-02T16:12:33.948195 #83848]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-12-02T16:12:34.057861 #83848]  INFO -- default-ubuntu-1404:     default: 22 => 2204 (adapter 1)
+I, [2014-12-02T16:12:36.307378 #83848]  INFO -- default-ubuntu-1404: ==> default: Running 'pre-boot' VM customizations...
+I, [2014-12-02T16:12:36.337036 #83848]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2014-12-02T16:12:36.583828 #83848]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2014-12-02T16:12:36.857258 #83848]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2204
+I, [2014-12-02T16:12:36.857393 #83848]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-12-02T16:12:36.857510 #83848]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-12-02T16:12:52.006440 #83848]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2014-12-02T16:12:52.146378 #83848]  INFO -- default-ubuntu-1404:     default: Warning: Remote connection disconnect. Retrying...
+I, [2014-12-02T16:12:54.651406 #83848]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-12-02T16:12:54.651746 #83848]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2014-12-02T16:12:54.680532 #83848]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-12-02T16:12:56.137783 #83848]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-12-02T16:12:57.704964 #83848]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-12-02T16:12:57.706697 #83848]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m36.68s).
+I, [2014-12-02T16:12:57.707029 #83848]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-12-02T16:12:57.707859 #83848]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-12-02T16:12:57.708385 #83848]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2014-12-02T16:12:57.719083 #83848]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-12-02T16:12:57.721187 #83848]  INFO -- default-ubuntu-1404: Preparing data bags
+I, [2014-12-02T16:12:57.721935 #83848]  INFO -- default-ubuntu-1404: Preparing encrypted data bag secret
+I, [2014-12-02T16:12:59.722199 #83848]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (true)
+I, [2014-12-02T16:12:59.722318 #83848]  INFO -- default-ubuntu-1404: downloading https://www.getchef.com/chef/install.sh
+I, [2014-12-02T16:12:59.722347 #83848]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh
+I, [2014-12-02T16:12:59.722371 #83848]  INFO -- default-ubuntu-1404: trying wget...
+Downloading Chef  for ubuntu...I, [2014-12-02T16:13:05.427537 #83848]  INFO -- default-ubuntu-1404: 
+downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64I, [2014-12-02T16:13:05.428534 #83848]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1932/metadata.txtI, [2014-12-02T16:13:05.428838 #83848]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-12-02T16:13:05.429187 #83848]  INFO -- default-ubuntu-1404: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.debI, [2014-12-02T16:13:10.695091 #83848]  INFO -- default-ubuntu-1404: 
+md5	a9965ce5811ddd75af1b587e40cca934I, [2014-12-02T16:13:10.695766 #83848]  INFO -- default-ubuntu-1404: 
+sha256	0b98b310afc2c0b066648e550e7b59a5e39faf60dc4fd9b4792035d0553c27c3I, [2014-12-02T16:13:10.696376 #83848]  INFO -- default-ubuntu-1404: 
+downloaded metadata file looks valid...I, [2014-12-02T16:13:10.699789 #83848]  INFO -- default-ubuntu-1404: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.debI, [2014-12-02T16:13:10.708523 #83848]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1932/chef_11.16.4-1_amd64.debI, [2014-12-02T16:13:10.708957 #83848]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-12-02T16:13:10.709323 #83848]  INFO -- default-ubuntu-1404: 
+Comparing checksum with sha256sum...I, [2014-12-02T16:13:24.597258 #83848]  INFO -- default-ubuntu-1404: 
+Installing Chef I, [2014-12-02T16:13:24.776144 #83848]  INFO -- default-ubuntu-1404: 
+installing with dpkg...I, [2014-12-02T16:13:24.776425 #83848]  INFO -- default-ubuntu-1404: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60899 files and directories currently installed.)I, [2014-12-02T16:13:25.106758 #83848]  INFO -- default-ubuntu-1404: 
+Preparing to unpack .../chef_11.16.4-1_amd64.deb ...I, [2014-12-02T16:13:25.109238 #83848]  INFO -- default-ubuntu-1404: 
+ * Stopping chef-client chef-client       [80G [74G[ OK ]I, [2014-12-02T16:13:25.166062 #83848]  INFO -- default-ubuntu-1404: 
+Unpacking chef (11.16.4-1) over (11.8.2-2) ...I, [2014-12-02T16:13:25.172222 #83848]  INFO -- default-ubuntu-1404: 
+dpkg: warning: unable to delete old directory '/var/log/chef': Directory not emptyI, [2014-12-02T16:13:28.861657 #83848]  INFO -- default-ubuntu-1404: 
+dpkg: warning: unable to delete old directory '/etc/chef': Directory not emptyI, [2014-12-02T16:13:28.863357 #83848]  INFO -- default-ubuntu-1404: 
+Setting up chef (11.16.4-1) ...I, [2014-12-02T16:13:28.892180 #83848]  INFO -- default-ubuntu-1404: 
+Thank you for installing Chef!I, [2014-12-02T16:13:28.970905 #83848]  INFO -- default-ubuntu-1404: 
+Processing triggers for man-db (2.6.7.1-1) ...I, [2014-12-02T16:13:28.977043 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:29.757688 #83848]  INFO -- default-ubuntu-1404: Transfering files to <default-ubuntu-1404>
+[2014-12-02T21:13:31+00:00] INFO: Forking chef instance to converge...I, [2014-12-02T16:13:31.341457 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:31+00:00] WARN: I, [2014-12-02T16:13:31.345440 #83848]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-12-02T16:13:31.345895 #83848]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-12-02T16:13:31.346281 #83848]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-12-02T16:13:31.346519 #83848]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-12-02T16:13:31.346795 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:31.346958 #83848]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-12-02T16:13:31.347238 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:31.347346 #83848]  INFO -- default-ubuntu-1404: 
+```I, [2014-12-02T16:13:31.347564 #83848]  INFO -- default-ubuntu-1404: 
+  # Verify all HTTPS connections (recommended)I, [2014-12-02T16:13:31.347811 #83848]  INFO -- default-ubuntu-1404: 
+  ssl_verify_mode :verify_peerI, [2014-12-02T16:13:31.348157 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:31.348314 #83848]  INFO -- default-ubuntu-1404: 
+  # OR, Verify only connections to chef-serverI, [2014-12-02T16:13:31.348821 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:31.348853 #83848]  INFO -- default-ubuntu-1404:   verify_api_cert true
+I, [2014-12-02T16:13:31.348891 #83848]  INFO -- default-ubuntu-1404: ```
+I, [2014-12-02T16:13:31.348914 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:31.348934 #83848]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-12-02T16:13:31.348956 #83848]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-12-02T16:13:31.348976 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:31.348996 #83848]  INFO -- default-ubuntu-1404: ```
+I, [2014-12-02T16:13:31.349016 #83848]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-12-02T16:13:31.349036 #83848]  INFO -- default-ubuntu-1404: ```
+I, [2014-12-02T16:13:31.349056 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:31.349076 #83848]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-12-02T16:13:31.349096 #83848]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.16.4[0mI, [2014-12-02T16:13:31.411094 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:31+00:00] INFO: *** Chef 11.16.4 ***I, [2014-12-02T16:13:31.411910 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:31+00:00] INFO: Chef-client pid: 2484I, [2014-12-02T16:13:31.412503 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] INFO: Setting the run_list to ["recipe[s3cmd::default]"] from CLI optionsI, [2014-12-02T16:13:37.380079 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] INFO: Run List is [recipe[s3cmd::default]]I, [2014-12-02T16:13:37.384324 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] INFO: Run List expands to [s3cmd::default]I, [2014-12-02T16:13:37.384751 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-12-02T16:13:37.384941 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] INFO: Running start handlersI, [2014-12-02T16:13:37.385371 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] INFO: Start handlers complete.I, [2014-12-02T16:13:37.385648 #83848]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-12-02T16:13:37.387760 #83848]  INFO -- default-ubuntu-1404: 
+/tmp/kitchen/cookbooks/s3cmd/recipes/default.rb:38: warning: already initialized constant AWS_ACCESS_KEY_IDI, [2014-12-02T16:13:37.393035 #83848]  INFO -- default-ubuntu-1404: 
+/tmp/kitchen/cookbooks/s3cmd/recipes/default.rb:39: warning: already initialized constant AWS_SECRET_ACCESS_KEYI, [2014-12-02T16:13:37.393616 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] WARN: Cloning resource attributes for template[s3cfg] from prior resource (CHEF-3694)I, [2014-12-02T16:13:37.394328 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] WARN: Previous template[s3cfg]: /tmp/kitchen/cookbooks/s3cmd/recipes/default.rb:40:in `block in from_file'I, [2014-12-02T16:13:37.394645 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:13:37+00:00] WARN: Current  template[s3cfg]: /tmp/kitchen/cookbooks/s3cmd/recipes/default.rb:40:in `block in from_file'I, [2014-12-02T16:13:37.394997 #83848]  INFO -- default-ubuntu-1404: 
+Converging 8 resources[0mI, [2014-12-02T16:13:37.395627 #83848]  INFO -- default-ubuntu-1404: 
+Recipe: s3cmd::default[0mI, [2014-12-02T16:13:37.396068 #83848]  INFO -- default-ubuntu-1404: 
+  * package[git-core] action install[2014-12-02T21:13:37+00:00] INFO: Processing package[git-core] action install (s3cmd::default line 6)I, [2014-12-02T16:13:37.396718 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:47.291185 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:47.291259 #83848]  INFO -- default-ubuntu-1404:     [32m- install version 1:1.9.1-1 of package git-core[0m
+I, [2014-12-02T16:13:47.291283 #83848]  INFO -- default-ubuntu-1404: [0m  * package[python-setuptools] action install[2014-12-02T21:13:47+00:00] INFO: Processing package[python-setuptools] action install (s3cmd::default line 7)
+I, [2014-12-02T16:13:53.625043 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:53.625145 #83848]  INFO -- default-ubuntu-1404:     [32m- install version 3.3-1ubuntu1 of package python-setuptools[0m
+I, [2014-12-02T16:13:53.625169 #83848]  INFO -- default-ubuntu-1404: [0m  * directory[/usr/local/share/s3cmd] action create[2014-12-02T21:13:53+00:00] INFO: Processing directory[/usr/local/share/s3cmd] action create (s3cmd::default line 9)
+I, [2014-12-02T16:13:53.625190 #83848]  INFO -- default-ubuntu-1404: [2014-12-02T21:13:53+00:00] INFO: directory[/usr/local/share/s3cmd] created directory /usr/local/share/s3cmd
+I, [2014-12-02T16:13:53.625209 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:13:53.625229 #83848]  INFO -- default-ubuntu-1404:     [32m- create new directory /usr/local/share/s3cmd[0m
+I, [2014-12-02T16:13:53.625248 #83848]  INFO -- default-ubuntu-1404: [0m  * git[/usr/local/share/s3cmd] action sync[2014-12-02T21:13:53+00:00] INFO: Processing git[/usr/local/share/s3cmd] action sync (s3cmd::default line 13)
+[2014-12-02T21:13:58+00:00] INFO: git[/usr/local/share/s3cmd] cloning repo git://github.com/s3tools/s3cmd.git to /usr/local/share/s3cmdI, [2014-12-02T16:13:58.819438 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.441566 #83848]  INFO -- default-ubuntu-1404: 
+    [32m- clone from git://github.com/s3tools/s3cmd.git into /usr/local/share/s3cmd[0mI, [2014-12-02T16:14:06.489202 #83848]  INFO -- default-ubuntu-1404: [2014-12-02T21:14:06+00:00] INFO: git[/usr/local/share/s3cmd] checked out branch: v1.5.0-alpha3 onto: deploy reference: f746d94568badbf86c7c0188ffec13c55392a230
+I, [2014-12-02T16:14:06.489273 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.489334 #83848]  INFO -- default-ubuntu-1404:     [32m- checkout ref f746d94568badbf86c7c0188ffec13c55392a230 branch v1.5.0-alpha3[0m
+I, [2014-12-02T16:14:06.489359 #83848]  INFO -- default-ubuntu-1404: [0m  * execute[build_s3cmd] action run[2014-12-02T21:14:06+00:00] INFO: Processing execute[build_s3cmd] action run (s3cmd::default line 19)
+I, [2014-12-02T16:14:06.620220 #83848]  INFO -- default-ubuntu-1404: [2014-12-02T21:14:06+00:00] INFO: execute[build_s3cmd] ran successfully
+I, [2014-12-02T16:14:06.620297 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.620328 #83848]  INFO -- default-ubuntu-1404:     [32m- execute python setup.py install[0m
+I, [2014-12-02T16:14:06.620350 #83848]  INFO -- default-ubuntu-1404: [0m  * link[/usr/local/bin/s3cmd] action create[2014-12-02T21:14:06+00:00] INFO: Processing link[/usr/local/bin/s3cmd] action create (s3cmd::default line 27)
+I, [2014-12-02T16:14:06.620371 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.620391 #83848]  INFO -- default-ubuntu-1404:     [32m- unlink existing file at /usr/local/bin/s3cmd[0m[2014-12-02T21:14:06+00:00] INFO: link[/usr/local/bin/s3cmd] created
+I, [2014-12-02T16:14:06.620412 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.620432 #83848]  INFO -- default-ubuntu-1404:     [32m- create symlink at /usr/local/bin/s3cmd to /usr/local/share/s3cmd/s3cmd[0m
+I, [2014-12-02T16:14:06.620452 #83848]  INFO -- default-ubuntu-1404: [0m  * template[s3cfg] action create[2014-12-02T21:14:06+00:00] INFO: Processing template[s3cfg] action create (s3cmd::default line 40)
+[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] created file /root/.s3cfgI, [2014-12-02T16:14:06.621267 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.621541 #83848]  INFO -- default-ubuntu-1404: 
+    [32m- create new file /root/.s3cfg[0m[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] updated file contents /root/.s3cfgI, [2014-12-02T16:14:06.624755 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.626150 #83848]  INFO -- default-ubuntu-1404: 
+    [32m- update content in file /root/.s3cfg from none to 52b83e[0mI, [2014-12-02T16:14:06.627266 #83848]  INFO -- default-ubuntu-1404: 
+    [37m--- /root/.s3cfg	2014-12-02 21:14:06.628828866 +0000[0mI, [2014-12-02T16:14:06.627688 #83848]  INFO -- default-ubuntu-1404: 
+    [37m+++ /tmp/chef-rendered-template20141202-2484-1vo5be9	2014-12-02 21:14:06.628828866 +0000[0mI, [2014-12-02T16:14:06.628216 #83848]  INFO -- default-ubuntu-1404: 
+    [37m@@ -1 +1,36 @@[0mI, [2014-12-02T16:14:06.628819 #83848]  INFO -- default-ubuntu-1404: 
+    [37m+[default][0mI, [2014-12-02T16:14:06.629710 #83848]  INFO -- default-ubuntu-1404: 
+    [37m+access_key = accesskey[0mI, [2014-12-02T16:14:06.630190 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.630364 #83848]  INFO -- default-ubuntu-1404:     [37m+acl_public = False[0m
+I, [2014-12-02T16:14:06.630633 #83848]  INFO -- default-ubuntu-1404:     [37m+bucket_location = US[0m
+I, [2014-12-02T16:14:06.630670 #83848]  INFO -- default-ubuntu-1404:     [37m+cloudfront_host = cloudfront.amazonaws.com[0m
+I, [2014-12-02T16:14:06.630928 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.630965 #83848]  INFO -- default-ubuntu-1404:     [37m+cloudfront_resource = /2008-06-30/distribution[0m
+I, [2014-12-02T16:14:06.630996 #83848]  INFO -- default-ubuntu-1404:     [37m+default_mime_type = binary/octet-stream[0m
+I, [2014-12-02T16:14:06.631042 #83848]  INFO -- default-ubuntu-1404:     [37m+delete_removed = False[0m
+I, [2014-12-02T16:14:06.631088 #83848]  INFO -- default-ubuntu-1404:     [37m+dry_run = False[0m
+I, [2014-12-02T16:14:06.631301 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.631329 #83848]  INFO -- default-ubuntu-1404:     [37m+encoding = UTF-8[0m
+I, [2014-12-02T16:14:06.631352 #83848]  INFO -- default-ubuntu-1404:     [37m+encrypt = False[0m
+I, [2014-12-02T16:14:06.631378 #83848]  INFO -- default-ubuntu-1404:     [37m+force = False[0m
+I, [2014-12-02T16:14:06.631565 #83848]  INFO -- default-ubuntu-1404:     [37m+get_continue = False[0m
+I, [2014-12-02T16:14:06.631603 #83848]  INFO -- default-ubuntu-1404:     [37m+gpg_command = /usr/bin/gpg[0m
+I, [2014-12-02T16:14:06.631624 #83848]  INFO -- default-ubuntu-1404:     [37m+gpg_decrypt = %(gpg_command)s -d --verbose --no-use-agent --batch --yes --passphrase-fd %(passphrase_fd)s -o %(output_file)s %(input_file)s[0m
+I, [2014-12-02T16:14:06.631656 #83848]  INFO -- default-ubuntu-1404:     [37m+gpg_encrypt = %(gpg_command)s -c --verbose --no-use-agent --batch --yes --passphrase-fd %(passphrase_fd)s -o %(output_file)s %(input_file)s[0m
+I, [2014-12-02T16:14:06.631836 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.631862 #83848]  INFO -- default-ubuntu-1404:     [37m+gpg_passphrase =[0m
+I, [2014-12-02T16:14:06.631882 #83848]  INFO -- default-ubuntu-1404:     [37m+guess_mime_type = True[0m
+I, [2014-12-02T16:14:06.632064 #83848]  INFO -- default-ubuntu-1404:     [37m+host_base = s3.amazonaws.com[0m
+I, [2014-12-02T16:14:06.632090 #83848]  INFO -- default-ubuntu-1404:     [37m+host_bucket = %(bucket)s.s3.amazonaws.com[0m
+I, [2014-12-02T16:14:06.632112 #83848]  INFO -- default-ubuntu-1404:     [37m+human_readable_sizes = False[0m
+I, [2014-12-02T16:14:06.632172 #83848]  INFO -- default-ubuntu-1404:     [37m+list_md5 = False[0m
+I, [2014-12-02T16:14:06.632499 #83848]  INFO -- default-ubuntu-1404:     [37m+preserve_attrs = True[0m
+I, [2014-12-02T16:14:06.632534 #83848]  INFO -- default-ubuntu-1404:     [37m+progress_meter = True[0m
+I, [2014-12-02T16:14:06.632594 #83848]  INFO -- default-ubuntu-1404:     [37m+proxy_host =[0m
+I, [2014-12-02T16:14:06.632808 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.632838 #83848]  INFO -- default-ubuntu-1404:     [37m+proxy_port = 0[0m
+I, [2014-12-02T16:14:06.632912 #83848]  INFO -- default-ubuntu-1404:     [37m+recursive = False[0m
+I, [2014-12-02T16:14:06.632948 #83848]  INFO -- default-ubuntu-1404:     [37m+recv_chunk = 4096[0m
+I, [2014-12-02T16:14:06.632986 #83848]  INFO -- default-ubuntu-1404:     [37m+secret_key = secretkey[0m
+I, [2014-12-02T16:14:06.633335 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.633407 #83848]  INFO -- default-ubuntu-1404:     [37m+send_chunk = 4096[0m
+I, [2014-12-02T16:14:06.633444 #83848]  INFO -- default-ubuntu-1404:     [37m+simpledb_host = sdb.amazonaws.com[0m
+I, [2014-12-02T16:14:06.633822 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.633870 #83848]  INFO -- default-ubuntu-1404:     [37m+skip_existing = False[0m
+I, [2014-12-02T16:14:06.633907 #83848]  INFO -- default-ubuntu-1404:     [37m+urlencoding_mode = normal[0m
+I, [2014-12-02T16:14:06.634340 #83848]  INFO -- default-ubuntu-1404:     [37m+use_https = False[0m
+I, [2014-12-02T16:14:06.634386 #83848]  INFO -- default-ubuntu-1404:     [37m+verbosity = WARNING[0m
+[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] owner changed to 0I, [2014-12-02T16:14:06.635086 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] group changed to 0I, [2014-12-02T16:14:06.635664 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] mode changed to 600I, [2014-12-02T16:14:06.636110 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.636336 #83848]  INFO -- default-ubuntu-1404: 
+    [32m- change mode from '' to '0600'[0mI, [2014-12-02T16:14:06.636858 #83848]  INFO -- default-ubuntu-1404: 
+    I, [2014-12-02T16:14:06.637678 #83848]  INFO -- default-ubuntu-1404: [32m- change owner from '' to 'root'[0m
+I, [2014-12-02T16:14:06.637744 #83848]  INFO -- default-ubuntu-1404:     [32m- change group from '' to 'root'[0m
+[0m  * template[s3cfg] action create[2014-12-02T21:14:06+00:00] INFO: Processing template[s3cfg] action create (s3cmd::default line 40)I, [2014-12-02T16:14:06.639750 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] created file /home/vagrant/.s3cfgI, [2014-12-02T16:14:06.640215 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.640443 #83848]  INFO -- default-ubuntu-1404: 
+    [32m- create new file /home/vagrant/.s3cfg[0m[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] updated file contents /home/vagrant/.s3cfgI, [2014-12-02T16:14:06.642552 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.642830 #83848]  INFO -- default-ubuntu-1404: 
+    [32m- update content in file /home/vagrant/.s3cfg from none to 52b83e[0mI, [2014-12-02T16:14:06.643250 #83848]  INFO -- default-ubuntu-1404: 
+    [37m--- /home/vagrant/.s3cfg	2014-12-02 21:14:06.648828866 +0000[0mI, [2014-12-02T16:14:06.644688 #83848]  INFO -- default-ubuntu-1404: 
+    [37m+++ /tmp/chef-rendered-template20141202-2484-r309s3	2014-12-02 21:14:06.648828866 +0000[0mI, [2014-12-02T16:14:06.645109 #83848]  INFO -- default-ubuntu-1404: 
+    [37m@@ -1 +1,36 @@[0mI, [2014-12-02T16:14:06.645303 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.645335 #83848]  INFO -- default-ubuntu-1404:     [37m+[default][0m
+I, [2014-12-02T16:14:06.645358 #83848]  INFO -- default-ubuntu-1404:     [37m+access_key = accesskey[0m
+I, [2014-12-02T16:14:06.645379 #83848]  INFO -- default-ubuntu-1404:     
+I, [2014-12-02T16:14:06.645575 #83848]  INFO -- default-ubuntu-1404: [37m+acl_public = False[0m
+I, [2014-12-02T16:14:06.645602 #83848]  INFO -- default-ubuntu-1404:     [37m+bucket_location = US[0m
+I, [2014-12-02T16:14:06.645623 #83848]  INFO -- default-ubuntu-1404:     [37m+cloudfront_host = cloudfront.amazonaws.com[0m
+I, [2014-12-02T16:14:06.645645 #83848]  INFO -- default-ubuntu-1404:     [37m+cloudfront_resource = /2008-06-30/distribution[0m
+I, [2014-12-02T16:14:06.645728 #83848]  INFO -- default-ubuntu-1404:     [37m+default_mime_type = binary/octet-stream[0m
+I, [2014-12-02T16:14:06.645913 #83848]  INFO -- default-ubuntu-1404:     [37m+delete_removed = False[0m
+I, [2014-12-02T16:14:06.645940 #83848]  INFO -- default-ubuntu-1404:     [37m+dry_run = False[0m
+I, [2014-12-02T16:14:06.645978 #83848]  INFO -- default-ubuntu-1404:     [37m+encoding = UTF-8[0m
+I, [2014-12-02T16:14:06.646007 #83848]  INFO -- default-ubuntu-1404:     [37m+encrypt = False[0m
+I, [2014-12-02T16:14:06.646321 #83848]  INFO -- default-ubuntu-1404:     [37m+force = False[0m
+I, [2014-12-02T16:14:06.646351 #83848]  INFO -- default-ubuntu-1404:     [37m+get_continue = False[0m
+I, [2014-12-02T16:14:06.646514 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.646549 #83848]  INFO -- default-ubuntu-1404:     [37m+gpg_command = /usr/bin/gpg[0m
+I, [2014-12-02T16:14:06.646574 #83848]  INFO -- default-ubuntu-1404:     [37m+gpg_decrypt = %(gpg_command)s -d --verbose --no-use-agent --batch --yes --passphrase-fd %(passphrase_fd)s -o %(output_file)s %(input_file)s[0m
+I, [2014-12-02T16:14:06.646600 #83848]  INFO -- default-ubuntu-1404:     
+I, [2014-12-02T16:14:06.646783 #83848]  INFO -- default-ubuntu-1404: [37m+gpg_encrypt = %(gpg_command)s -c --verbose --no-use-agent --batch --yes --passphrase-fd %(passphrase_fd)s -o %(output_file)s %(input_file)s[0m
+I, [2014-12-02T16:14:06.646827 #83848]  INFO -- default-ubuntu-1404:     [37m+gpg_passphrase =[0m
+I, [2014-12-02T16:14:06.646849 #83848]  INFO -- default-ubuntu-1404:     [37m+guess_mime_type = True[0m
+I, [2014-12-02T16:14:06.647098 #83848]  INFO -- default-ubuntu-1404:     [37m+host_base = s3.amazonaws.com[0m
+I, [2014-12-02T16:14:06.647133 #83848]  INFO -- default-ubuntu-1404:     [37m+host_bucket = %(bucket)s.s3.amazonaws.com[0m
+I, [2014-12-02T16:14:06.647156 #83848]  INFO -- default-ubuntu-1404:     [37m+human_readable_sizes = False[0m
+I, [2014-12-02T16:14:06.647181 #83848]  INFO -- default-ubuntu-1404:     [37m+list_md5 = False[0m
+I, [2014-12-02T16:14:06.647523 #83848]  INFO -- default-ubuntu-1404:     [37m+preserve_attrs = True[0m
+I, [2014-12-02T16:14:06.647554 #83848]  INFO -- default-ubuntu-1404:     [37m+progress_meter = True[0m
+I, [2014-12-02T16:14:06.647576 #83848]  INFO -- default-ubuntu-1404:     [37m+proxy_host =[0m
+I, [2014-12-02T16:14:06.647597 #83848]  INFO -- default-ubuntu-1404:     [37m+proxy_port = 0[0m
+I, [2014-12-02T16:14:06.647643 #83848]  INFO -- default-ubuntu-1404:     
+I, [2014-12-02T16:14:06.648336 #83848]  INFO -- default-ubuntu-1404: [37m+recursive = False[0m
+I, [2014-12-02T16:14:06.648400 #83848]  INFO -- default-ubuntu-1404:     [37m+recv_chunk = 4096[0m
+I, [2014-12-02T16:14:06.648424 #83848]  INFO -- default-ubuntu-1404:     [37m+secret_key = secretkey[0m
+I, [2014-12-02T16:14:06.648446 #83848]  INFO -- default-ubuntu-1404:     [37m+send_chunk = 4096[0m
+I, [2014-12-02T16:14:06.648471 #83848]  INFO -- default-ubuntu-1404:     [37m+simpledb_host = sdb.amazonaws.com[0m
+I, [2014-12-02T16:14:06.648494 #83848]  INFO -- default-ubuntu-1404:     [37m+skip_existing = False[0m
+I, [2014-12-02T16:14:06.648516 #83848]  INFO -- default-ubuntu-1404:     [37m+urlencoding_mode = normal[0m
+I, [2014-12-02T16:14:06.648537 #83848]  INFO -- default-ubuntu-1404:     [37m+use_https = False[0m
+    [37m+verbosity = WARNING[0m[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] owner changed to 1000I, [2014-12-02T16:14:06.650384 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] group changed to 1000I, [2014-12-02T16:14:06.650955 #83848]  INFO -- default-ubuntu-1404: 
+[2014-12-02T21:14:06+00:00] INFO: template[s3cfg] mode changed to 600I, [2014-12-02T16:14:06.651844 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.652493 #83848]  INFO -- default-ubuntu-1404: 
+    [32m- change mode from '' to '0600'[0mI, [2014-12-02T16:14:06.653010 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.653757 #83848]  INFO -- default-ubuntu-1404:     [32m- change owner from '' to 'vagrant'[0m
+I, [2014-12-02T16:14:06.653800 #83848]  INFO -- default-ubuntu-1404:     [32m- change group from '' to 'vagrant'[0m
+[0m[2014-12-02T21:14:06+00:00] INFO: Chef Run complete in 29.266550818 secondsI, [2014-12-02T16:14:06.654243 #83848]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-12-02T16:14:06.654651 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.654988 #83848]  INFO -- default-ubuntu-1404: Running handlers:[0m
+I, [2014-12-02T16:14:06.655020 #83848]  INFO -- default-ubuntu-1404: [2014-12-02T21:14:06+00:00] INFO: Running report handlers
+I, [2014-12-02T16:14:06.655043 #83848]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2014-12-02T16:14:06.655411 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.655448 #83848]  INFO -- default-ubuntu-1404: [0m[2014-12-02T21:14:06+00:00] INFO: Report handlers complete
+I, [2014-12-02T16:14:06.655473 #83848]  INFO -- default-ubuntu-1404: Chef Client finished, 8/8 resources updated in 35.312022295 seconds[0m
+I, [2014-12-02T16:14:06.656400 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:06.742453 #83848]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (1m9.03s).
+I, [2014-12-02T16:14:06.742961 #83848]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem (  1%)Fetching: thor-0.19.0.gem (  3%)Fetching: thor-0.19.0.gem (  4%)Fetching: thor-0.19.0.gem (  6%)Fetching: thor-0.19.0.gem ( 10%)Fetching: thor-0.19.0.gem ( 13%)Fetching: thor-0.19.0.gem ( 15%)Fetching: thor-0.19.0.gem ( 16%)Fetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 19%)Fetching: thor-0.19.0.gem ( 21%)Fetching: thor-0.19.0.gem ( 22%)Fetching: thor-0.19.0.gem ( 24%)Fetching: thor-0.19.0.gem ( 25%)Fetching: thor-0.19.0.gem ( 30%)Fetching: thor-0.19.0.gem ( 33%)Fetching: thor-0.19.0.gem ( 34%)Fetching: thor-0.19.0.gem ( 37%)Fetching: thor-0.19.0.gem ( 39%)Fetching: thor-0.19.0.gem ( 41%)Fetching: thor-0.19.0.gem ( 42%)Fetching: thor-0.19.0.gem ( 51%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 54%)Fetching: thor-0.19.0.gem ( 56%)Fetching: thor-0.19.0.gem ( 59%)Fetching: thor-0.19.0.gem ( 62%)Fetching: thor-0.19.0.gem ( 68%)Fetching: thor-0.19.0.gem ( 69%)Fetching: thor-0.19.0.gem ( 72%)Fetching: thor-0.19.0.gem ( 74%)Fetching: thor-0.19.0.gem ( 75%)Fetching: thor-0.19.0.gem ( 77%)Fetching: thor-0.19.0.gem ( 78%)Fetching: thor-0.19.0.gem ( 80%)Fetching: thor-0.19.0.gem ( 81%)Fetching: thor-0.19.0.gem ( 83%)Fetching: thor-0.19.0.gem ( 84%)Fetching: thor-0.19.0.gem ( 86%)Fetching: thor-0.19.0.gem ( 87%)Fetching: thor-0.19.0.gem ( 95%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)I, [2014-12-02T16:14:21.967399 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: busser-0.6.2.gemFetching: busser-0.6.2.gem (  9%)Fetching: busser-0.6.2.gem ( 15%)Fetching: busser-0.6.2.gem ( 27%)Fetching: busser-0.6.2.gem ( 33%)Fetching: busser-0.6.2.gem ( 45%)Fetching: busser-0.6.2.gem ( 70%)Fetching: busser-0.6.2.gem ( 82%)Fetching: busser-0.6.2.gem ( 94%)Fetching: busser-0.6.2.gem (100%)Fetching: busser-0.6.2.gem (100%)I, [2014-12-02T16:14:22.150765 #83848]  INFO -- default-ubuntu-1404: 
+Successfully installed thor-0.19.0I, [2014-12-02T16:14:22.166820 #83848]  INFO -- default-ubuntu-1404: 
+Successfully installed busser-0.6.2I, [2014-12-02T16:14:22.167060 #83848]  INFO -- default-ubuntu-1404: 
+2 gems installedI, [2014-12-02T16:14:22.167331 #83848]  INFO -- default-ubuntu-1404: 
+-----> Setting up BusserI, [2014-12-02T16:14:22.315828 #83848]  INFO -- default-ubuntu-1404: 
+       Creating BUSSER_ROOT in /tmp/busserI, [2014-12-02T16:14:22.316199 #83848]  INFO -- default-ubuntu-1404: 
+       Creating busser binstubI, [2014-12-02T16:14:22.316449 #83848]  INFO -- default-ubuntu-1404: 
+       Plugin serverspec installed (version 0.5.3)I, [2014-12-02T16:14:36.970606 #83848]  INFO -- default-ubuntu-1404: 
+-----> Running postinstall for serverspec pluginI, [2014-12-02T16:14:36.973337 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:37.525853 #83848]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m30.78s).
+I, [2014-12-02T16:14:37.525957 #83848]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+       Suite path directory /tmp/busser/suites does not exist, skipping.I, [2014-12-02T16:14:37.927169 #83848]  INFO -- default-ubuntu-1404: 
+Uploading /tmp/busser/suites/serverspec/localhost/default_spec.rb (mode=0644)I, [2014-12-02T16:14:38.082861 #83848]  INFO -- default-ubuntu-1404: 
+Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)I, [2014-12-02T16:14:38.483121 #83848]  INFO -- default-ubuntu-1404: 
+-----> Running serverspec test suiteI, [2014-12-02T16:14:38.888162 #83848]  INFO -- default-ubuntu-1404: 
+-----> Installing Serverspec..I, [2014-12-02T16:14:38.891760 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: rspec-support-3.1.2.gemFetching: rspec-support-3.1.2.gem (  3%)Fetching: rspec-support-3.1.2.gem ( 10%)Fetching: rspec-support-3.1.2.gem ( 22%)Fetching: rspec-support-3.1.2.gem ( 40%)Fetching: rspec-support-3.1.2.gem ( 59%)Fetching: rspec-support-3.1.2.gem ( 71%)Fetching: rspec-support-3.1.2.gem ( 77%)Fetching: rspec-support-3.1.2.gem ( 83%)Fetching: rspec-support-3.1.2.gem (100%)Fetching: rspec-support-3.1.2.gem (100%)I, [2014-12-02T16:14:57.147576 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: rspec-core-3.1.7.gemFetching: rspec-core-3.1.7.gem (  1%)Fetching: rspec-core-3.1.7.gem (  4%)Fetching: rspec-core-3.1.7.gem (  6%)Fetching: rspec-core-3.1.7.gem (  7%)Fetching: rspec-core-3.1.7.gem ( 10%)Fetching: rspec-core-3.1.7.gem ( 12%)Fetching: rspec-core-3.1.7.gem ( 16%)Fetching: rspec-core-3.1.7.gem ( 18%)Fetching: rspec-core-3.1.7.gem ( 21%)Fetching: rspec-core-3.1.7.gem ( 22%)Fetching: rspec-core-3.1.7.gem ( 28%)Fetching: rspec-core-3.1.7.gem ( 41%)Fetching: rspec-core-3.1.7.gem ( 44%)Fetching: rspec-core-3.1.7.gem ( 46%)Fetching: rspec-core-3.1.7.gem ( 47%)Fetching: rspec-core-3.1.7.gem ( 48%)Fetching: rspec-core-3.1.7.gem ( 49%)Fetching: rspec-core-3.1.7.gem ( 62%)Fetching: rspec-core-3.1.7.gem ( 64%)Fetching: rspec-core-3.1.7.gem ( 65%)Fetching: rspec-core-3.1.7.gem ( 67%)Fetching: rspec-core-3.1.7.gem ( 68%)Fetching: rspec-core-3.1.7.gem ( 70%)Fetching: rspec-core-3.1.7.gem ( 74%)Fetching: rspec-core-3.1.7.gem ( 76%)Fetching: rspec-core-3.1.7.gem ( 79%)Fetching: rspec-core-3.1.7.gem ( 80%)Fetching: rspec-core-3.1.7.gem ( 84%)Fetching: rspec-core-3.1.7.gem ( 85%)Fetching: rspec-core-3.1.7.gem ( 86%)Fetching: rspec-core-3.1.7.gem ( 87%)Fetching: rspec-core-3.1.7.gem ( 89%)Fetching: rspec-core-3.1.7.gem ( 90%)Fetching: rspec-core-3.1.7.gem (100%)Fetching: rspec-core-3.1.7.gem (100%)I, [2014-12-02T16:14:57.444577 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: diff-lcs-1.2.5.gemFetching: diff-lcs-1.2.5.gem (  3%)Fetching: diff-lcs-1.2.5.gem (  9%)Fetching: diff-lcs-1.2.5.gem ( 15%)Fetching: diff-lcs-1.2.5.gem ( 18%)Fetching: diff-lcs-1.2.5.gem ( 21%)Fetching: diff-lcs-1.2.5.gem ( 27%)Fetching: diff-lcs-1.2.5.gem ( 33%)Fetching: diff-lcs-1.2.5.gem ( 36%)Fetching: diff-lcs-1.2.5.gem ( 45%)Fetching: diff-lcs-1.2.5.gem ( 51%)Fetching: diff-lcs-1.2.5.gem ( 54%)Fetching: diff-lcs-1.2.5.gem ( 56%)Fetching: diff-lcs-1.2.5.gem ( 59%)Fetching: diff-lcs-1.2.5.gem ( 62%)Fetching: diff-lcs-1.2.5.gem ( 96%)Fetching: diff-lcs-1.2.5.gem (100%)Fetching: diff-lcs-1.2.5.gem (100%)I, [2014-12-02T16:14:57.697743 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: rspec-expectations-3.1.2.gemFetching: rspec-expectations-3.1.2.gem (  4%)Fetching: rspec-expectations-3.1.2.gem ( 23%)Fetching: rspec-expectations-3.1.2.gem ( 30%)Fetching: rspec-expectations-3.1.2.gem ( 36%)Fetching: rspec-expectations-3.1.2.gem ( 43%)Fetching: rspec-expectations-3.1.2.gem ( 49%)Fetching: rspec-expectations-3.1.2.gem ( 56%)Fetching: rspec-expectations-3.1.2.gem ( 64%)Fetching: rspec-expectations-3.1.2.gem ( 73%)Fetching: rspec-expectations-3.1.2.gem ( 77%)Fetching: rspec-expectations-3.1.2.gem ( 82%)Fetching: rspec-expectations-3.1.2.gem ( 86%)Fetching: rspec-expectations-3.1.2.gem ( 88%)Fetching: rspec-expectations-3.1.2.gem ( 90%)Fetching: rspec-expectations-3.1.2.gem ( 92%)Fetching: rspec-expectations-3.1.2.gem ( 97%)Fetching: rspec-expectations-3.1.2.gem ( 99%)Fetching: rspec-expectations-3.1.2.gem (100%)Fetching: rspec-expectations-3.1.2.gem (100%)I, [2014-12-02T16:14:57.873802 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: rspec-mocks-3.1.3.gemFetching: rspec-mocks-3.1.3.gem (  2%)Fetching: rspec-mocks-3.1.3.gem ( 21%)Fetching: rspec-mocks-3.1.3.gem ( 46%)Fetching: rspec-mocks-3.1.3.gem ( 72%)Fetching: rspec-mocks-3.1.3.gem ( 97%)Fetching: rspec-mocks-3.1.3.gem (100%)Fetching: rspec-mocks-3.1.3.gem (100%)I, [2014-12-02T16:14:58.069216 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: rspec-3.1.0.gemFetching: rspec-3.1.0.gem ( 22%)Fetching: rspec-3.1.0.gem ( 64%)Fetching: rspec-3.1.0.gem (100%)Fetching: rspec-3.1.0.gem (100%)I, [2014-12-02T16:14:58.219964 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: rspec-its-1.1.0.gemFetching: rspec-its-1.1.0.gem ( 17%)Fetching: rspec-its-1.1.0.gem ( 29%)Fetching: rspec-its-1.1.0.gem ( 40%)Fetching: rspec-its-1.1.0.gem ( 51%)Fetching: rspec-its-1.1.0.gem (100%)Fetching: rspec-its-1.1.0.gem (100%)I, [2014-12-02T16:14:58.364731 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: multi_json-1.10.1.gemFetching: multi_json-1.10.1.gem (  5%)Fetching: multi_json-1.10.1.gem ( 10%)Fetching: multi_json-1.10.1.gem ( 19%)Fetching: multi_json-1.10.1.gem ( 24%)Fetching: multi_json-1.10.1.gem ( 43%)Fetching: multi_json-1.10.1.gem ( 48%)Fetching: multi_json-1.10.1.gem ( 52%)Fetching: multi_json-1.10.1.gem ( 57%)Fetching: multi_json-1.10.1.gem ( 62%)Fetching: multi_json-1.10.1.gem ( 66%)Fetching: multi_json-1.10.1.gem ( 71%)Fetching: multi_json-1.10.1.gem ( 76%)Fetching: multi_json-1.10.1.gem ( 81%)Fetching: multi_json-1.10.1.gem ( 85%)Fetching: multi_json-1.10.1.gem ( 90%)Fetching: multi_json-1.10.1.gem ( 95%)Fetching: multi_json-1.10.1.gem (100%)Fetching: multi_json-1.10.1.gem (100%)I, [2014-12-02T16:14:58.633303 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: net-ssh-2.9.1.gemFetching: net-ssh-2.9.1.gem (  2%)Fetching: net-ssh-2.9.1.gem (  8%)Fetching: net-ssh-2.9.1.gem ( 10%)Fetching: net-ssh-2.9.1.gem ( 14%)Fetching: net-ssh-2.9.1.gem ( 16%)Fetching: net-ssh-2.9.1.gem ( 17%)Fetching: net-ssh-2.9.1.gem ( 20%)Fetching: net-ssh-2.9.1.gem ( 23%)Fetching: net-ssh-2.9.1.gem ( 25%)Fetching: net-ssh-2.9.1.gem ( 32%)Fetching: net-ssh-2.9.1.gem ( 33%)Fetching: net-ssh-2.9.1.gem ( 34%)Fetching: net-ssh-2.9.1.gem ( 35%)Fetching: net-ssh-2.9.1.gem ( 36%)Fetching: net-ssh-2.9.1.gem ( 37%)Fetching: net-ssh-2.9.1.gem ( 44%)Fetching: net-ssh-2.9.1.gem ( 51%)Fetching: net-ssh-2.9.1.gem ( 52%)Fetching: net-ssh-2.9.1.gem ( 62%)Fetching: net-ssh-2.9.1.gem ( 65%)Fetching: net-ssh-2.9.1.gem ( 67%)Fetching: net-ssh-2.9.1.gem ( 68%)Fetching: net-ssh-2.9.1.gem ( 69%)Fetching: net-ssh-2.9.1.gem ( 70%)Fetching: net-ssh-2.9.1.gem ( 74%)Fetching: net-ssh-2.9.1.gem ( 79%)Fetching: net-ssh-2.9.1.gem ( 80%)Fetching: net-ssh-2.9.1.gem ( 83%)Fetching: net-ssh-2.9.1.gem ( 86%)Fetching: net-ssh-2.9.1.gem ( 90%)Fetching: net-ssh-2.9.1.gem ( 99%)Fetching: net-ssh-2.9.1.gem (100%)Fetching: net-ssh-2.9.1.gem (100%)I, [2014-12-02T16:14:58.861103 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: net-scp-1.2.1.gemFetching: net-scp-1.2.1.gem (  7%)Fetching: net-scp-1.2.1.gem ( 15%)Fetching: net-scp-1.2.1.gem ( 19%)Fetching: net-scp-1.2.1.gem ( 32%)Fetching: net-scp-1.2.1.gem ( 57%)Fetching: net-scp-1.2.1.gem ( 66%)Fetching: net-scp-1.2.1.gem ( 70%)Fetching: net-scp-1.2.1.gem ( 87%)Fetching: net-scp-1.2.1.gem ( 95%)Fetching: net-scp-1.2.1.gem (100%)Fetching: net-scp-1.2.1.gem (100%)I, [2014-12-02T16:14:59.119343 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: specinfra-2.9.1.gemFetching: specinfra-2.9.1.gem (  2%)Fetching: specinfra-2.9.1.gem ( 12%)Fetching: specinfra-2.9.1.gem ( 31%)Fetching: specinfra-2.9.1.gem ( 37%)Fetching: specinfra-2.9.1.gem ( 43%)Fetching: specinfra-2.9.1.gem ( 50%)Fetching: specinfra-2.9.1.gem ( 53%)Fetching: specinfra-2.9.1.gem ( 59%)Fetching: specinfra-2.9.1.gem ( 66%)Fetching: specinfra-2.9.1.gem ( 69%)Fetching: specinfra-2.9.1.gem ( 75%)Fetching: specinfra-2.9.1.gem ( 78%)Fetching: specinfra-2.9.1.gem ( 88%)Fetching: specinfra-2.9.1.gem ( 94%)Fetching: specinfra-2.9.1.gem (100%)Fetching: specinfra-2.9.1.gem (100%)I, [2014-12-02T16:14:59.275418 #83848]  INFO -- default-ubuntu-1404: 
+Fetching: serverspec-2.5.0.gemFetching: serverspec-2.5.0.gem (  3%)Fetching: serverspec-2.5.0.gem (  7%)Fetching: serverspec-2.5.0.gem ( 11%)Fetching: serverspec-2.5.0.gem ( 16%)Fetching: serverspec-2.5.0.gem ( 24%)Fetching: serverspec-2.5.0.gem ( 76%)Fetching: serverspec-2.5.0.gem (100%)Fetching: serverspec-2.5.0.gem (100%)I, [2014-12-02T16:14:59.512597 #83848]  INFO -- default-ubuntu-1404: 
+-----> serverspec installed (version 2.5.0)I, [2014-12-02T16:14:59.597316 #83848]  INFO -- default-ubuntu-1404: 
+/opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.1.2/lib:/tmp/busser/gems/gems/rspec-core-3.1.7/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspecI, [2014-12-02T16:14:59.664208 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:14:59.971951 #83848]  INFO -- default-ubuntu-1404: 
+File "/root/.s3cfg"I, [2014-12-02T16:14:59.972210 #83848]  INFO -- default-ubuntu-1404: 
+[32m  should be file[0mI, [2014-12-02T16:15:00.083463 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:15:00.083652 #83848]  INFO -- default-ubuntu-1404: 
+File "/home/vagrant/.s3cfg"I, [2014-12-02T16:15:00.083897 #83848]  INFO -- default-ubuntu-1404: 
+[32m  should be file[0mI, [2014-12-02T16:15:00.088870 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:15:00.089237 #83848]  INFO -- default-ubuntu-1404: 
+Finished in 0.11757 seconds (files took 0.27935 seconds to load)I, [2014-12-02T16:15:00.089549 #83848]  INFO -- default-ubuntu-1404: 
+[32m2 examples, 0 failures[0mI, [2014-12-02T16:15:00.090182 #83848]  INFO -- default-ubuntu-1404: 
+I, [2014-12-02T16:15:00.134239 #83848]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m22.61s).
+I, [2014-12-02T16:15:00.136230 #83848]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:15:02.266892 #83848]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2014-12-02T16:15:03.373616 #83848]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2014-12-02T16:15:03.580770 #83848]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-12-02T16:15:03.581601 #83848]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m3.44s).
+I, [2014-12-02T16:15:03.581956 #83848]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (2m46.11s).

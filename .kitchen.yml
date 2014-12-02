@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+  data_bags_path: test/support/data_bags
+  encrypted_data_bag_secret_key_path: test/support/encrypted_data_bag_secret_key
+
+platforms:
+  - name: ubuntu-14.04
+    driver_config:
+      box: canonical-ubuntu-14.04
+      box_url: http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
+      customize:
+        memory: 512
+
+suites:
+  - name: default
+    run_list:
+      - recipe[s3cmd::default]
+    attributes:
+      s3cmd:
+        users:
+          - root
+          - vagrant

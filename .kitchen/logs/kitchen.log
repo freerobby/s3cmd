@@ -1,0 +1,97 @@
+I, [2014-12-02T16:05:05.907536 #83017]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-12-02T16:05:06.210919 #83017]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-12-02T16:05:06.211113 #83017]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:05:06.212334 #83017]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2014-12-02T16:05:06.212435 #83017]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2014-12-02T16:05:45.042944 #83017]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2014-12-02T16:05:45.053882 #83017] ERROR -- Kitchen: ------Exception-------
+E, [2014-12-02T16:05:45.053937 #83017] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-12-02T16:05:45.053973 #83017] ERROR -- Kitchen: Message: Failed to complete #converge action: [The metadata.rb does not define the 'name' key. Please add: `name '<cookbook_name>'` to metadata.rb and retry]
+E, [2014-12-02T16:05:45.054090 #83017] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-12-02T16:05:45.054126 #83017] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-12-02T16:05:45.054154 #83017] ERROR -- Kitchen: Message: The metadata.rb does not define the 'name' key. Please add: `name '<cookbook_name>'` to metadata.rb and retry
+E, [2014-12-02T16:05:45.054179 #83017] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-12-02T16:05:45.054203 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:369:in `cp_this_cookbook'
+E, [2014-12-02T16:05:45.054236 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:265:in `prepare_cookbooks'
+E, [2014-12-02T16:05:45.054268 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:120:in `create_sandbox'
+E, [2014-12-02T16:05:45.054350 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2014-12-02T16:05:45.054391 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2014-12-02T16:05:45.054418 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-12-02T16:05:45.054443 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-12-02T16:05:45.054531 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-12-02T16:05:45.054568 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-12-02T16:05:45.054594 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-12-02T16:05:45.054616 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-12-02T16:05:45.054638 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:05:45.054737 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-12-02T16:05:45.054769 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-12-02T16:05:45.054802 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-12-02T16:05:45.054836 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-12-02T16:05:45.054863 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-12-02T16:05:45.054886 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-12-02T16:05:45.054911 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-12-02T16:05:45.055037 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-12-02T16:05:45.055072 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:05:45.055104 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-12-02T16:05:45.055130 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-12-02T16:05:45.055152 #83017] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-12-02T16:05:45.055176 #83017] ERROR -- Kitchen: ----------------------
+I, [2014-12-02T16:06:55.685517 #83227]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-12-02T16:06:56.066159 #83227]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-12-02T16:06:56.067480 #83227]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:06:59.405394 #83227]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2014-12-02T16:06:59.405507 #83227]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2014-12-02T16:07:36.335877 #83227]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2014-12-02T16:07:36.352717 #83227] ERROR -- Kitchen: ------Exception-------
+E, [2014-12-02T16:07:36.352756 #83227] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-12-02T16:07:36.352780 #83227] ERROR -- Kitchen: Message: Failed to complete #converge action: [No such file or directory @ rb_file_s_stat - /Users/robby/workspace/wistia/chef/chef-s3cmd/test/support/encrypted_data_bag_secret_key]
+E, [2014-12-02T16:07:36.352802 #83227] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-12-02T16:07:36.352822 #83227] ERROR -- Kitchen: Class: Errno::ENOENT
+E, [2014-12-02T16:07:36.352842 #83227] ERROR -- Kitchen: Message: No such file or directory @ rb_file_s_stat - /Users/robby/workspace/wistia/chef/chef-s3cmd/test/support/encrypted_data_bag_secret_key
+E, [2014-12-02T16:07:36.352863 #83227] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-12-02T16:07:36.352883 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:1573:in `stat'
+E, [2014-12-02T16:07:36.352908 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:1573:in `block in fu_each_src_dest'
+E, [2014-12-02T16:07:36.353039 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:1589:in `fu_each_src_dest0'
+E, [2014-12-02T16:07:36.353061 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:1571:in `fu_each_src_dest'
+E, [2014-12-02T16:07:36.353082 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/fileutils.rb:440:in `cp_r'
+E, [2014-12-02T16:07:36.353102 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:250:in `prepare_secret'
+E, [2014-12-02T16:07:36.353134 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:127:in `create_sandbox'
+E, [2014-12-02T16:07:36.353156 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2014-12-02T16:07:36.353177 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2014-12-02T16:07:36.353198 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-12-02T16:07:36.353218 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-12-02T16:07:36.353239 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-12-02T16:07:36.353259 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-12-02T16:07:36.353280 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-12-02T16:07:36.353300 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-12-02T16:07:36.353320 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:07:36.353341 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-12-02T16:07:36.353416 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-12-02T16:07:36.353437 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-12-02T16:07:36.353458 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-12-02T16:07:36.353478 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-12-02T16:07:36.353499 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-12-02T16:07:36.353519 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-12-02T16:07:36.353539 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-12-02T16:07:36.353560 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-12-02T16:07:36.353601 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-12-02T16:07:36.353622 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-12-02T16:07:36.353643 #83227] ERROR -- Kitchen: /Users/robby/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-12-02T16:07:36.353664 #83227] ERROR -- Kitchen: ----------------------
+I, [2014-12-02T16:08:45.034738 #83468]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-12-02T16:08:45.535553 #83468]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-12-02T16:08:45.536673 #83468]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:08:48.900149 #83468]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2014-12-02T16:08:48.900260 #83468]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2014-12-02T16:09:26.135803 #83468]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2014-12-02T16:10:05.559447 #83468] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2014-12-02T16:12:17.071069 #83848]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-12-02T16:12:17.473240 #83848]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2014-12-02T16:12:17.474319 #83848]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:12:21.020909 #83848]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2014-12-02T16:12:21.021035 #83848]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2014-12-02T16:12:57.706771 #83848]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2014-12-02T16:14:06.742577 #83848]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1404>...
+I, [2014-12-02T16:14:37.525930 #83848]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1404>...
+I, [2014-12-02T16:15:00.135959 #83848]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2014-12-02T16:15:03.582377 #83848]  INFO -- Kitchen: -----> Kitchen is finished. (2m46.51s)
