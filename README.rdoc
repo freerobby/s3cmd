@@ -1,16 +1,14 @@
 = DESCRIPTION:
 
-Installs and configures s3cmd
-
-= REQUIREMENTS:
+Installs and configures s3cmd. Uses encrypted data bags for security.
 
 = ATTRIBUTES:
 
 All node attributes are set under the :s3cmd namespace.
 
-* :users - array of usernames for whom a .s3cfg will be created in their home directory; defaults to [:root]
-* :aws_access_key_id - AWS access key for S3
-* :aws_secret_access_key - AWS secret access key for S3
+* :users - array of usernames for whom a .s3cfg will be created in their home directory; defaults to ['root']
+* :encrypted_data_bag - name of encrypted data bag containing aws credentials
+* :encrypted_data_bag_item - name of data bag item containing :aws_access_key_id and :aws_secret_access_key
 
 = USAGE:
 
