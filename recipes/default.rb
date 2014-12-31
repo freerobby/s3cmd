@@ -5,6 +5,8 @@
 
 package "git-core"
 package "python-setuptools"
+# Newer versions of s3cmd require "dateutil"
+package "python-dateutil"
 
 directory "#{node[:s3cmd][:install_prefix_root]}/share/s3cmd" do
   action :create
